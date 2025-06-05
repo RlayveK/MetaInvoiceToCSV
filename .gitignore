@@ -1,0 +1,22 @@
+# Ignorar arquivos e pastas de dados
+data/
+output/
+*.pdf
+*.csv
+
+# Ignorar arquivos gerados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar arquivos de build
+build/
+dist/
+*.egg-info/
+.env
+.venv/
+
+# Ignorar IDEs
+.vscode/
+.idea/
