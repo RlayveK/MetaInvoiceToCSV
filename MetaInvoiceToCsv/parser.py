@@ -29,10 +29,12 @@ def getWabas(texto):
     waba = ""
     pos_bar = 0
     tirar='''Account summary
-    Product Price type Conversations Discount percentage Total'''
+Product Price type QuantityDiscount 
+percentageTotal
+'''
 
     first_name = input("Primeiro nome: ")
-    ultimo = input("Último waba id: ").strip()
+    ultimo = "121266107581982"
 
     pos_ultimo = texto.find(ultimo)
 
@@ -52,7 +54,7 @@ def getWabas(texto):
             waba = extrair_id_sub(subtexto)
             pos = pos_bar + len(waba) + 1
         
-        nome = nome.replace(tirar, '').strip()
+        nome = nome.strip().replace(tirar, '').strip()
         wabaEncontrados.append((nome, waba, encontrarValor(waba, subtexto)))
     return wabaEncontrados
 
