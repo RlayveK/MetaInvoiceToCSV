@@ -1,6 +1,4 @@
 # Ignorar arquivos e pastas de dados
-data/
-output/
 *.pdf
 *.csv
 
